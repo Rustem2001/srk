@@ -1,0 +1,169 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	padding: 30px;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 24px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;   
+}
+/*--------------------*/
+
+/*Синтаксис CSS*/
+.block-1>p{
+	font-size: 16px;
+	color: chartreuse;
+}
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+span.bigblue{
+	font-size: 30px;
+	color: blue;
+}
+/*--------------------*/
+
+/*Стили шрифта и текста*/
+.font-family{
+	font-family: 'Pacifico', cursive;
+}
+.font-size24{
+	font-size: 24px;
+}
+.italic{
+	font-style: italic;
+}
+.font-weight{
+	font-weight: bold;
+}
+.color{
+	color:chocolate;
+}
+.text-align{
+	text-align: center;
+}
+.text-decoration{
+	text-decoration: line-through;
+}
+.text-shadow{
+	text-shadow: 2px -2px 2px #000;
+}
+.text-transform{
+	text-transform: uppercase;
+}
+.letter-spacing{
+	letter-spacing: 8px;
+}
+.word-spacing{
+	word-spacing: 20px;
+}
+.white-space{
+	white-space: nowrap;
+}
+.line-height{
+	line-height: 40px;
+}
+/*--------------------*/
+
+/*Свойства блоков*/
+.block-2{
+	max-width: 1200px;
+	min-width: 800px;
+	height: 110px;
+	overflow: auto;
+	margin: 30px;
+	padding: 30px 30px 30px 30px;
+	border: 2px solid black;
+}
+.block-3{
+	width: 90%;
+	height: 200px;
+	margin: 30px;
+	padding: 30px;
+	border: 2px solid black;
+}
+.string-1{
+	display: block;								/*Из строчного стал БЛОЧНЫМ*/
+	display: inline;							/*Из блочного стал СТРОЧНЫМ*/
+	display: inline-block;						/*Гибрид - и блочный и строчный*/
+	/*display: none;							Элемент скрыт, нету его*/
+	/*visibility: hidden;						Предназначен для отображения или скрытия элемента*/
+	border: 2px solid black;
+	padding: 20px;
+	margin: 20px;
+}
+/*--------------------*/
+
+/*Свойства и стили оформления блоков*/
+.block-4{
+	border: 5px solid red;						/*Граница*/
+	outline: 5px solid blue;					/*Внешняя граница*/
+	background-color: pink;
+	box-shadow: 5px 5px 5px 5px green;
+	border-radius: 50px 0px 50px 0px;
+	font-size: 50px;
+	margin: 0 0 30px 0;
+	padding: 20px;
+	opacity: 0.5;									/*Прозрачность элемента от 0-1*/
+	
+}
+.string-2{
+	font-size: 20px;
+}
+.image-1{
+	width: 200px;
+	border-radius: 50%;
+}
+/*--------------------*/
+
+/*CSS свойство BACKGROUND*/
+.block-5{
+	background:coral url(bg_repeat.jpg) 30%/cover no-repeat;  /*Все в один ряд */
+	background-color: coral;						/*Цвет фона */
+	background-image: url(bg_repeat.jpg);			/*Путь к img */
+	background-repeat: no-repeat;					/*Повторение round, space*/
+	background-position: 50%;				/*Позиция center, left */
+	/*background-attachment: fixed;					Фон фиксируется, стоит на месте*/
+	background-size: cover;					/*Размер фона изображения*/
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #000;
+}
+
